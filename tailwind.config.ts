@@ -12,6 +12,10 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        oswald: ["Oswald", "serif"],
+        bigShoulders: ["Big Shoulders Display", "sans-serif"],
+      },
     },
   },
   plugins: [],
