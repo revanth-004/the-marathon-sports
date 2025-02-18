@@ -49,9 +49,11 @@ const page = () => {
                   key={index}
                   className="h-16 w-16 my-4 mx-2 rounded-md border border-gray-300"
                 >
-                  <img
-                    src={img}
+                  <Image
                     alt=""
+                    width={500}
+                    height={300}
+                    src={img}
                     className="w-full h-full rounded-md object-cover"
                     onClick={() => handleImageClick(index)}
                   />
@@ -97,13 +99,13 @@ const page = () => {
                 )}`}
                 target="_blank"
               >
-                <button className="my-2 sm:w-40 py-2 mx-2 w-64 text-green-500 font-semibold  font-medium border border-[1.5px] border-green-500 flex items-center justify-center gap-2">
+                <button className="my-2 sm:w-40 py-2 mx-2 w-64 text-green-500 font-semibold  border  border-green-500 flex items-center justify-center gap-2">
                   <img src="/assets/WhatsApp.png" alt="" className="w-5 h-5" />
                   WhatsApp
                 </button>
               </a>
               <a href={`tel:${phoneNumber}`}>
-                <button className="my-2 sm:w-40 py-2 mx-2 w-64 text-white bg-green-500 font-semibold  font-medium border border-[2px] border-green-500">
+                <button className="my-2 sm:w-40 py-2 mx-2 w-64 text-white bg-green-500 font-semibold border  border-green-500">
                   Call Now
                 </button>
               </a>

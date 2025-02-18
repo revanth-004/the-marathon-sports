@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { products } from "../constants";
 
 const ProductCard = ({ id, title, price, imageURL }) => {
@@ -7,9 +8,11 @@ const ProductCard = ({ id, title, price, imageURL }) => {
     <Link href={`/product/${id}`}>
       <div className="m-4 sm:w-60  w-64 flex flex-col justify-center cursor-pointer duration-500 hover:scale-110">
         <div className="h-60 sm:w-60 w-full  rounded-2xl bg-gray-200 ">
-          <img
-            src={imageURL}
+          <Image
             alt=""
+            width={500}
+            height={300}
+            src={imageURL}
             className="h-full w-full object-cover rounded-2xl"
           />
         </div>
