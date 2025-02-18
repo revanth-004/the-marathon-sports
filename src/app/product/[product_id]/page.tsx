@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useParams } from "next/navigation";
 import { products, phoneNumber, whatsAppNumber } from "../../constants";
 import ProductCard from "../../components/ProductCard";
+import Image from "next/image";
 
 const page = () => {
   const params = useParams();
@@ -34,9 +35,11 @@ const page = () => {
         <div className=" w-full lg:flex px-10 gap-10 ">
           <div className="max-h-[80vh] min-w-[400px] max-w-[500px] ">
             <div className="sm:h-[80%] min-h-[300px] sm:w-full w-[80vw] rounded-2xl ">
-              <img
-                src={product.imageURL[selectedImageIndex]}
+              <Image
                 alt=""
+                width={500}
+                height={300}
+                src={product.imageURL[selectedImageIndex]}
                 className="w-[80vw] h-[400px] rounded-2xl object-cover"
               />
             </div>
