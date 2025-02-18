@@ -5,7 +5,7 @@ import { products, phoneNumber, whatsAppNumber } from "../../constants";
 import ProductCard from "../../components/ProductCard";
 import Image from "next/image";
 
-const page = () => {
+const Page = () => {
   const params = useParams();
   const product_id = params?.product_id as string;
   const product = products.find((p) => p.id === product_id) || products[0];
@@ -133,4 +133,4 @@ const page = () => {
     </>
   );
 };
-export default page;
+export default Page;
