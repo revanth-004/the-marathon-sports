@@ -15,6 +15,7 @@ export default {
       fontFamily: {
         oswald: ["Oswald", "serif"],
         bigShoulders: ["Big Shoulders Display", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
       },
     },
   },

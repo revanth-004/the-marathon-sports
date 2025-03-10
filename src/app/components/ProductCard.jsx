@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { products } from "../constants";
+
 
 const ProductCard = ({ id, title, price, imageURL }) => {
   return (
@@ -16,9 +16,9 @@ const ProductCard = ({ id, title, price, imageURL }) => {
             className="h-full w-full object-cover rounded-2xl"
           />
         </div>
-        <div className="mx-1">
-          <h2 className="font-semibold">{title}</h2>
-          <p className="font-black">{price}</p>
+        <div className="mx-1 my-2">
+          <h2 className=" font-montserrat">{title}</h2>
+          <p className="font-bold font-montserrat">₹{price}</p>
         </div>
       </div>
     </Link>

@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "./Button";
 
 const HeroBanner = () => {
   return (
@@ -8,17 +9,9 @@ const HeroBanner = () => {
           <h1 className="text-8xl text-black font-bigShoulders ">
             The Marathan Sports
           </h1>
-          <button className="mt-5 bg-black-500 rounded-full text-black px-4  font-oswald  border border-black">
-            Shop now
-          </button>
+          <Button text="Shop now" />
         </div>
-        <div className="p-4 relative w-full flex justify-center items-center">
-          <img
-            src="/assets/icon.png"
-            alt="Background"
-            className="h-28 sm:h-[80%]  object-cover"
-          />
-        </div>
+        <div className="p-4 relative w-full flex justify-center items-center"></div>
       </div>
     </div>
   );

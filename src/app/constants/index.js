@@ -1,3 +1,21 @@
+export const phoneNumber = "+916379851614";
+export const whatsAppNumber = "+916379851614";
+
+export const brands = [
+  { name: "Nike", logo: "/assets/nike.svg" },
+  { name: "Adidas", logo: "/assets/adidas.png" },
+  { name: "Puma", logo: "/assets/puma.svg" },
+  { name: "Reebok", logo: "/assets/reebok.svg" },
+  { name: "Under Armour", logo: "/assets/under-armour.svg" },
+  { name: "SG", logo: "/assets/sg.jpg" }, // Sanspareils Greenlands
+  { name: "SS", logo: "/assets/ss.png" }, // Sareen Sports
+  { name: "MRF", logo: "/assets/mrf.png" },
+  { name: "CEAT", logo: "/assets/ceat.jpg" },
+  { name: "Kookaburra", logo: "/assets/kookaburra.svg" },
+  { name: "Gray-Nicolls", logo: "/assets/grey-nicolls.jpg" },
+  { name: "Gunn & Moore", logo: "/assets/gm.png" },
+];
+
 export const products = [
   {
     id: "1",
@@ -96,6 +114,3 @@ export const products = [
     ],
   },
 ];
-
-export const phoneNumber = "+916379851614";
-export const whatsAppNumber = "+916379851614";
